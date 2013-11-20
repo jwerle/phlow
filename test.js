@@ -1,19 +1,6 @@
-phlow
-=====
 
-Wrap an object flow middleware with it
-
-## install
-
-```sh
-$ npm install phlow
-```
-
-## usage
-
-```js
-
-var phlow = require('phlow')
+var phlow = require('./')
+  , assert = require('assert')
 
 var a = [
   'joe', 'harry', 'max', 'travis', 'zach', 'damjan', 'sam'
@@ -24,7 +11,8 @@ phlow(a)
   .use(indexOf('a'))
   .end(function (err, a) {
     if (err) throw err;
-    console.log(a); // ['max', 'sam']
+    assert(-1 != a.indexOf('max'));
+    assert(-1 != a.indexOf('sam'));
   });
 
 
@@ -43,8 +31,4 @@ function indexOf (s) {
     }));
   }
 }
-```
 
-## license
-
-MIT

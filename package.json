@@ -1,0 +1,25 @@
+{
+  "name": "phlow",
+  "version": "0.0.1",
+  "description": "Wrap an object flow middleware with it",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "flow",
+    "filters",
+    "next",
+    "middleware",
+    "wrap"
+  ],
+  "author": "Joseph Werle",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jwerle/phlow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jwerle/phlow/issues"
+  }
+}
